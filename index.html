@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MTACR Annotations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to the MTACR Project!</h1>
+  <p>Links to the annotation webpages are below. Thank you so much!</p>
+</div>
+
+<!-- <div class="navbar">
+  <a href="#">kobani</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div> -->
+<!-- 
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  -->
+  <div class="main mx-auto">
+    <div style="width: 40vw;margin-left:auto; margin-right:auto; padding-top:18px;"> 
+        <div style="font-size: 1.5em; font-weight: bolder;"> Images to Target Language (flikr30k) </div>
+        <img src="CRAMT-Tool-IconImage2Text.png" width="150vw" alt="Image2Text"/>
+        <h4> <a href="http://vie-eng-30k.schuler-christian.de/"> Vietnamese (Tiếng Việt Hình ảnh) </a></h4>
+        <h4> <a href="http://mfe-eng-30k.schuler-christian.de/"> Morisien (Mauritian Creole Image) </a></h4>
+        <h4> <a href="http://kob-eng-30k.schuler-christian.de/"> Kurdish Kobani (Kurdî Kobanî Wêne) </a></h4>
+        <h4> <a href="http://zho-eng-30k.schuler-christian.de/"> Chinese (汉语 图像) </a></h4>
+        <br>
+    	<div style="font-size: 1.5em; font-weight: bolder;"> English Text to Target Language (NLLB) </div>
+    	<img src="CRAMT-Tool-IconText2Text.png" width="150vw" alt="Text2Text"/>
+        <h4> <a href="http://vie-eng-nllb.schuler-christian.de/"> Vietnamese (Tiếng Việt Chữ) </a></h4>
+        <h4> <a href="http://mfe-eng-nllb.schuler-christian.de/"> Morisien (Mauritian Creole Text) </a></h4>
+        <h4> <a href="http://kob-eng-nllb.schuler-christian.de/"> Kurdish Kobani (Kurdî Kobanî Nivîstok) </a></h4>
+        <h4> <a href="http://zho-eng-nllb.schuler-christian.de/"> Chinese (汉语 文本) </a></h4>
+    </div>
+  </div>
+<!-- </div> -->
+
+<!-- <div class="footer">
+  <h2>Footer</h2>
+</div>  -->
+
+</body>
+</html>
+
+
